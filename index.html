@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chart</title>
+	<script src="jquery.js"></script>
+	<script src="Chart.js"></script>
+	<script src="ResizeSensor.js"></script>
+	<script src="ElementQueries.js"></script>
+	<script src="knob.js"></script>
+</head>
+<style>
+	#chartCon{
+		width: 150px;
+		height: 150px;
+		float: left;
+	}
+	#chartCon2{
+		width: 200px;
+		height: 200px;
+		float: left;
+	}
+</style>
+<body>
+	<div id="chartCon"></div>
+	<div id="chartCon2"></div>
+</body>
+<script>
+
+	$(document).ready(function(){
+		$('#chartCon').knob({
+			lineWidth : 30,
+			borderBackgroundColor : "#efefef",
+			borderColor: "#00897B",
+			text : "test data",
+			degree: 270
+		});
+		$('#chartCon2').knob({
+			lineWidth : 30,
+			borderBackgroundColor : "#efefef",
+			borderColor: "#F44336",
+			text : "test data",
+			degree: 220
+		});
+	});
+</script>
+</html>
